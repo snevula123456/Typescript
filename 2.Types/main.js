@@ -50,3 +50,16 @@ if (typeof singh == "string") {
 else {
     console.log("condition failing");
 }
+var bankAccount = {
+    money: 2000,
+    deposit: function (value2222) {
+        this.money += value2222;
+    }
+};
+var myself = {
+    name: 'Max',
+    Account: bankAccount,
+    hobbies: ["sports", "cooking"]
+};
+myself.Account.deposit(3000);
+console.log(myself);

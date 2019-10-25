@@ -66,3 +66,23 @@ if(typeof singh == "string"){
 else{
      console.log("condition failing");
 }
+
+type bank = {money:number, deposit: (value2222:number)=> void }
+
+let bankAccount = {
+     money: 2000,
+     deposit(value2222:number):void{
+          this.money += value2222;
+     }
+}
+
+let myself :{name:string , Account:bank, hobbies:string[]} = {
+     name:'Max',
+     Account:bankAccount,
+     hobbies:["sports","cooking"]
+};
+myself.Account.deposit(3000);
+
+console.log(myself);
+
+
