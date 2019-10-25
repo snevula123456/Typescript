@@ -38,4 +38,31 @@ let Complex: {data:number[] , output:(all:boolean)=> number[]} = {
      }
 }
 
+// Creating Types in Typescript for complexity and reusability
+type shyam = {data:number[], output: (all:boolean)=> number[]}
 
+// using types 
+let testtypes:shyam = {
+     data:[100,200,300],
+     output:function(all:boolean):number[]{
+          return this.data;
+     }
+}
+
+
+// Union Types : You can assign types more than one type
+
+let myrealage:number | string;
+myrealage = "Shyam";
+
+// Comparision with typeof for condition --> to check the condition typeof should be in quotation mark
+
+
+let singh = 20;
+console.log(typeof(singh));
+if(typeof singh == "string"){
+     console.log("Type should be in quotation marks on ly then only it will work");
+}
+else{
+     console.log("condition failing");
+}

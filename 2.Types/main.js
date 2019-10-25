@@ -31,3 +31,22 @@ var Complex = {
         return this.data;
     }
 };
+// using types 
+var testtypes = {
+    data: [100, 200, 300],
+    output: function (all) {
+        return this.data;
+    }
+};
+// Union Types : You can assign types more than one type
+var myrealage;
+myrealage = "Shyam";
+// Comparision with typeof for condition --> to check the condition typeof should be in quotation mark
+var singh = 20;
+console.log(typeof (singh));
+if (typeof singh == "string") {
+    console.log("Type should be in quotation marks on ly then only it will work");
+}
+else {
+    console.log("condition failing");
+}
